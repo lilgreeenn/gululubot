@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gulu the Chatting Dog</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="chat-container">
+    <div class="chat-box" id="chatBox">
+        <p class="bot-message">Heyyy Is Gulu! I'm just chasing my tail and playing with my kitten buddy. Got any fun games or snacks for us today? I'm all ears and ready for adventure!</p>
+    </div>
+    <input type="text" id="userInput" class="user-input" placeholder="Type your message here..." autofocus>
+    <button onclick="sendMessage()" class="send-button">Send</button>
+    <div id="imageContainer"></div>
+
+
+
+
+
+    <div class="weather-container" id="weather">
+        Loading weather...
+        
+    </div>
+    
+    <div id="movie-container">
+       
+        <div id="movie"></div>
+    </div>
+
+
+    <div id="notes" style="position: fixed; bottom: 105px; right: 10px; background-color: #f4b5d5; border: 3px solid #ada1b9; border-radius: 3px;">
+        <textarea id="noteContent" rows="3" cols="20" placeholder="Type your notes here..." style="width: 100%; height: 100%; border: none; font-family: 'MouseFont', sans-serif; background-color: #f7b9c9; color: black; font-size: 1.2em;"></textarea>
+    </div>
+    
+    
+    
+   
+
+
+    <div id="clock" style="position: fixed; top: 25px; right: 15px; color: #6680d6; font-size: 30px;"></div>
+    <script>
+    function updateClock() {
+        const now = new Date();
+        const hours = now.getHours().toString().padStart(2, '0'); 
+        const minutes = now.getMinutes().toString().padStart(2, '0');
+        const seconds = now.getSeconds().toString().padStart(2, '0'); 
+        document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
+    }
+    
+    setInterval(updateClock, 1000);
+    </script>
+
+
+
+
+
+<script src="script.js">
+
+</script>
+</body>
+</html>

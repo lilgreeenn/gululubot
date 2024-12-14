@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<title>小狗</title>
+<style>
+    img {
+        width: 40%;
+        height: auto;
+        display: block;
+        margin: 0 auto; 
+        border: 8px solid black; 
+    }
+  
+    button {
+    padding: 5px 10px; 
+    font-size: 20px; 
+    font-family: 'MouseFont', sans-serif;
+    border: 5px solid black;
+    width: 150px; 
+    margin-top: 20px; 
+
+    cursor: url('https://cdn.glitch.global/901fe2a6-c697-4c1d-ba02-ff535a3c59ba/%E6%9C%AA%E5%91%BD%E5%90%8D%E4%BD%9C%E5%93%81%2022.png?v=1709260780983'), auto;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #ee2e8e;
+}
+
+    @font-face {
+        font-family: 'MouseFont';
+        src: url('https://cdn.glitch.global/3490dcca-0fa7-448d-bd0a-9262d7b87e86/mouse.otf?v=1702064290774') format('opentype');
+    }
+    body {
+        font-family: 'MouseFont', sans-serif;
+        font-size: 150%;
+        text-align: center;
+        padding: 15px;
+        background-color: rgb(223, 223, 255);
+    }
+    html {
+        cursor: url(https://cdn.glitch.global/901fe2a6-c697-4c1d-ba02-ff535a3c59ba/%E6%9C%AA%E5%91%BD%E5%90%8D%E4%BD%9C%E5%93%81%2022.png?v=1709260780983), auto;
+    }
+</style>
+</head>
+<body>
+    <h1 style="text-align:center;">I know you want to chat with the cutest puppy in the world!</h1>
+    <img src="Gulu.png">
+    <button onclick="window.location.href='chat.html'"><h2>Start</h2></button>
+</body>
+</html>

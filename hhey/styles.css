@@ -1,0 +1,27 @@
+.typewriter {
+    position: relative;
+    display: inline-block;
+}
+
+.cursor {
+    display: inline-block;
+    width: 2px;
+    height: 1em;
+    background-color: black;
+    margin-left: 2px;
+    animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+#text {
+    display: inline-block;
+    font-family: monospace;
+    white-space: nowrap;
+}
+
+img {
+    height: 100px;  /* 或者其他尺寸，取决于你的需要 */
+}
